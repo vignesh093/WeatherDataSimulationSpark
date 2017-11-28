@@ -1,0 +1,193 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>weatherdata - org.generate.weatherdata</title>
+          <meta name="description" content="weatherdata - org.generate.weatherdata" />
+          <meta name="keywords" content="weatherdata org.generate.weatherdata" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.generate.weatherdata.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.generate">generate</a></p>
+        <h1>weatherdata</h1><span class="permalink">
+      <a href="../../../index.html#org.generate.weatherdata.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">weatherdata</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.generate.weatherdata.GenerateWeatherDataParams" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GenerateWeatherDataParamsextendsWeatherDataMethods"></a>
+      <a id="GenerateWeatherDataParams:GenerateWeatherDataParams"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenerateWeatherDataParams.html"><span class="name">GenerateWeatherDataParams</span></a><span class="result"> extends <a href="WeatherDataMethods.html" class="extype" name="org.generate.weatherdata.WeatherDataMethods">WeatherDataMethods</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.generate.weatherdata.package@GenerateWeatherDataParamsextendsWeatherDataMethods" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> A companion class which implements the methods defined in WeatherDataMethods trait.</p><div class="fullcomment"><div class="comment cmt"><p> A companion class which implements the methods defined in WeatherDataMethods trait.
+ Each parameter in the weather data would have a corresponding method here to simulate the dataset</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>1.0</p></dd></dl></div>
+    </li><li name="org.generate.weatherdata.WeatherData" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="WeatherDataextendsProductwithSerializable"></a>
+      <a id="WeatherData:WeatherData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WeatherData.html"><span class="name">WeatherData</span></a><span class="params">(<span name="location">location: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="position">position: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="localtime">localtime: <span class="extype" name="java.sql.Timestamp">Timestamp</span></span>, <span name="conditions">conditions: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="temperature">temperature: <span class="extype" name="scala.Float">Float</span></span>, <span name="pressure">pressure: <span class="extype" name="scala.Float">Float</span></span>, <span name="humidity">humidity: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.generate.weatherdata.package@WeatherDataextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Schema for the simulated weather dataset.</p><div class="fullcomment"><div class="comment cmt"><p>Schema for the simulated weather dataset.</p></div><dl class="paramcmts block"><dt class="param">location</dt><dd class="cmt"><p>City to which the weather data belongs to</p></dd><dt class="param">position</dt><dd class="cmt"><p>Position(latitude,longitude,altitude) of the city</p></dd><dt class="param">localtime</dt><dd class="cmt"><p>Localtime of the city</p></dd><dt class="param">temperature</dt><dd class="cmt"><p>Temperature of the city for the specified localtime</p></dd><dt class="param">pressure</dt><dd class="cmt"><p>Pressure of the city</p></dd><dt class="param">humidity</dt><dd class="cmt"><p>Humidity of the city for the specified localtime</p></dd></dl></div>
+    </li><li name="org.generate.weatherdata.WeatherDataMethods" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="WeatherDataMethodsextendsAnyRef"></a>
+      <a id="WeatherDataMethods:WeatherDataMethods"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="WeatherDataMethods.html"><span class="name">WeatherDataMethods</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.generate.weatherdata.package@WeatherDataMethodsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is the base trait for WeatherDataSimulation.</p><div class="fullcomment"><div class="comment cmt"><p>This is the base trait for WeatherDataSimulation. It provides a method for each parameter
+ which then combines to generate the weather simulation dataset.</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>1.0</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.generate.weatherdata.GenerateWeatherDataParams" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GenerateWeatherDataParams"></a>
+      <a id="GenerateWeatherDataParams:GenerateWeatherDataParams"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GenerateWeatherDataParams$.html"><span class="name">GenerateWeatherDataParams</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.generate.weatherdata.package@GenerateWeatherDataParams" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> A companion object which holds the predefined values for different parameters used in
+ weather data simulation</p><div class="fullcomment"><div class="comment cmt"><p> A companion object which holds the predefined values for different parameters used in
+ weather data simulation</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>1.0</p></dd></dl></div>
+    </li><li name="org.generate.weatherdata.SimulateData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimulateData"></a>
+      <a id="SimulateData:SimulateData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SimulateData$.html"><span class="name">SimulateData</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.generate.weatherdata.package@SimulateData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
