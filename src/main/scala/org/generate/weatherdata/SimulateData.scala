@@ -4,21 +4,21 @@ import org.apache.spark.sql.SparkSession
 import java.sql.Timestamp
 import com.typesafe.config.ConfigFactory
 
-
 /**
  *  Main class which simulates the weather data from the defined methods and writes the simulated
- *  data to a file using Apache Spark 
+ *  data to a file using Apache Spark
  *  @author vignesh.i
  *  @version 1.0
- *  
+ *
  *  Format:
  *  bin/spark-submit --class SimulateData --master yarn --deploy-mode cluster JARfilepathwithname
- *  
+ *
  *  Arguments:
- *  Default arguments are specified in application.conf file, override the conf if required.  
+ *  Default arguments are specified in application.conf file, override the conf if required.
  */
 
-/** Schema for the simulated weather dataset.
+/**
+ * Schema for the simulated weather dataset.
  *  @param location City to which the weather data belongs to
  *  @param position Position(latitude,longitude,altitude) of the city
  *  @param localtime Localtime of the city
@@ -36,7 +36,7 @@ object SimulateData {
 
     val spark = SparkSession.builder.appName("Spark Exercise").master("local[*]").getOrCreate()
     import spark.implicits._
-    val input_sequence_number = spark.sqlContext.range(propertyconf.getInt("number_of_rows")).toDF()//Get the number of rows from the config
+    val input_sequence_number = spark.sqlContext.range(propertyconf.getInt("number_of_rows")).toDF() //Get the number of rows from the config
     //and create a sequence number
     val output_data = input_sequence_number.map { x =>
       val temperature = generateweatherdataparams.getTemperature
